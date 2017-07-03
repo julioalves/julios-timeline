@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
 </head>
 <body>
 <header>
@@ -150,69 +153,77 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate
                     saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores.
                     Alias, ullam.</p>
-                <a class="bnt-more" href="javascript:void(0)">More</a>
+                <a id="1977-more" class="bnt-more" href="javascript:void(0)">More</a>
             </div>
         </div>
 
 
     </div>
 </section>
-
-<script type="text/javascript" href="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!--<script type="text/javascript" href="https://code.jquery.com/jquery-2.2.4.min.js"></script>-->
 <script type="text/javascript" href="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
-
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
 <script type="text/javascript">
-    $(function(){
 
-        window.sr = ScrollReveal();
-
-        if ($(window).width() < 768) {
-
-            if ($('.timeline-content').hasClass('js--fadeInLeft')) {
-                $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
-            }
-
-            sr.reveal('.js--fadeInRight', {
-                origin: 'right',
-                distance: '300px',
-                easing: 'ease-in-out',
-                duration: 800,
-            });
-
-        } else {
-
-            sr.reveal('.js--fadeInLeft', {
-                origin: 'left',
-                distance: '300px',
-                easing: 'ease-in-out',
-                duration: 800,
-            });
-
-            sr.reveal('.js--fadeInRight', {
-                origin: 'right',
-                distance: '300px',
-                easing: 'ease-in-out',
-                duration: 800,
-            });
-
-        }
-
-        sr.reveal('.js--fadeInLeft', {
-            origin: 'left',
-            distance: '300px',
-            easing: 'ease-in-out',
-            duration: 800,
-        });
-
-        sr.reveal('.js--fadeInRight', {
-            origin: 'right',
-            distance: '300px',
-            easing: 'ease-in-out',
-            duration: 800,
-        });
-
-
+    $(document).ready(function() {
+        $('#1977-more').magnificPopup({type:'image'});
     });
+
+
+//    $(function(){
+//
+//        window.sr = ScrollReveal();
+//        if ($(window).width() < 768) {
+//            if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+//                $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+//            }
+//            sr.reveal('.js--fadeInRight', {
+//                origin: 'right',
+//                distance: '300px',
+//                easing: 'ease-in-out',
+//                duration: 800,
+//            });
+//
+//        } else {
+//
+//            sr.reveal('.js--fadeInLeft', {
+//                origin: 'left',
+//                distance: '300px',
+//                easing: 'ease-in-out',
+//                duration: 800,
+//            });
+//
+//            sr.reveal('.js--fadeInRight', {
+//                origin: 'right',
+//                distance: '300px',
+//                easing: 'ease-in-out',
+//                duration: 800,
+//            });
+//        }
+//
+//        sr.reveal('.js--fadeInLeft', {
+//            origin: 'left',
+//            distance: '300px',
+//            easing: 'ease-in-out',
+//            duration: 800,
+//        });
+//
+//        sr.reveal('.js--fadeInRight', {
+//            origin: 'right',
+//            distance: '300px',
+//            easing: 'ease-in-out',
+//            duration: 800,
+//        });
+//
+//
+//    });
+
+
+    // Example with multiple objects
+
 
 </script>
 </body>
